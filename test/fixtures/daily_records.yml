@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2024-01-16
+  male_count: 1
+  female_count: 1
+  male_avg_age: 1.5
+  female_avg_age: 1.5
+
+two:
+  date: 2024-01-16
+  male_count: 1
+  female_count: 1
+  male_avg_age: 1.5
+  female_avg_age: 1.5

@@ -1,0 +1,40 @@
+
+<h1>User Records</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Created At</th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.age %></td>
+      <td><%= user.gender %></td>
+      <td><%= user.created_at %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p>Total number of user records: <%= @users.count %></p>
+
+<h2>Daily Records</h2>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Male Avg Count</th>
+    <th>Female Avg Count</th>
+    <th>Male Avg Age</th>
+    <th>Female Avg Age</th>
+  </tr>
+  <% @daily_records.each do |record| %>
+    <tr>
+      <td><%= record.date %></td>
+      <td><%= record.male_count %></td>
+      <td><%= record.female_count %></td>
+      <td><%= record.male_avg_age %></td>
+      <td><%= record.female_avg_age %></td>
+    </tr>
+  <% end %>
+</table>
